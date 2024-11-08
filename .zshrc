@@ -121,7 +121,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
  alias zshconfig="nvim ~/.zshrc"
  alias ohmyzsh="nvim ~/.oh-my-zsh"
- alias ls="ls -l"
+ alias ls="lsd -l"
  alias start="bash .mc.sh"
+ alias java8="/usr/lib/jvm/java-8-openjdk/bin/java"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
