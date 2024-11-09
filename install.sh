@@ -24,5 +24,4 @@ cp ~/dotfiles/.viminfo ~/
 cp ~/dotfiles/.zshrc ~/
 sudo cp -r ~/dotfiles/fonts/fonts /usr/share/fonts
 
-
-
+source ~/.zshrc
