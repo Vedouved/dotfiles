@@ -2,7 +2,12 @@ c#! /bin/bas0
 
 #install packages
 
-sudo pacman -Syu neovim hyprland swww waybar zsh kitty fastfetch wofi nwg-look hyprlock hypridle lsd seatd
+sudo pacman -Syu neovim hyprland swww waybar kitty fastfetch wofi nwg-look hyprlock hypridle lsd seatd zsh
+
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
 
 paru -S waypaper pywal-git
 
