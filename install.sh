@@ -1,4 +1,4 @@
-c#! /bin/bas0
+c#! /bin/bash
 
 #install packages
 
