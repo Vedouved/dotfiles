@@ -1,8 +1,8 @@
-#! /bin/bash
+c#! /bin/bas0
 
 #install packages
 
-sudo pacman -Syu neovim hyprland swww waybar zsh kitty fastfetch wofi nwg-look hyprlock hyprpidle lsd
+sudo pacman -Syu neovim hyprland swww waybar zsh kitty fastfetch wofi nwg-look hyprlock hyprpidle lsd seatd
 
 paru -S waypaper pywal-git
 
