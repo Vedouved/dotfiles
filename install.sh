@@ -2,7 +2,7 @@ c#! /bin/bas0
 
 #install packages
 
-sudo pacman -Syu neovim hyprland swww waybar zsh kitty fastfetch wofi nwg-look hyprlock hyprpidle lsd seatd
+sudo pacman -Syu neovim hyprland swww waybar zsh kitty fastfetch wofi nwg-look hyprlock hypridle lsd seatd
 
 paru -S waypaper pywal-git
 
