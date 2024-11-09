@@ -7,7 +7,7 @@ sudo pacman -Syu neovim hyprland swww waybar zsh kitty fastfetch wofi nwg-look h
 paru -S waypaper pywal-git
 
 #change shellto zsh
-chsh -s $(which zsh)
+sudo chsh -s $(which zsh)
 
 #install oh-my-zsh
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
