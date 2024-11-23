@@ -1,18 +1,13 @@
 #! /bin/bash
 
 #install packages
-
-sudo pacman -Syu neovim hyprland swww waybar kitty fastfetch wofi nwg-look hyprlock hypridle lsd seatd zsh
-
+sudo pacman -Syu neovim hyprland swww waybar kitty fastfetch wofi nwg-look hyprlock hypridle lsd seatd zsh openssh
 sudo pacman -S --needed base-devel
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 
 paru -S waypaper pywal-git
-
-#change shellto zsh
-sudo chsh -s $(which zsh)
 
 #install oh-my-zsh
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
