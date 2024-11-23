@@ -23,5 +23,5 @@ cp ~/dotfiles/.p10k.sh ~/
 cp ~/dotfiles/.viminfo ~/
 cp ~/dotfiles/.zshrc ~/
 sudo cp -r ~/dotfiles/fonts/fonts /usr/share/fonts
-sudo cp -r ~/dotfiles/ly /etc
+sudo cp -r ~/dotfiles/ly /etc/
 source ~/.zshrc
