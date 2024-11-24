@@ -26,5 +26,6 @@ sudo cp -r ~/dotfiles/fonts/fonts /usr/share/
 sudo cp -r ~/dotfiles/ly/ /etc/
 source ~/.zshrc
 
-#enable ly  greeter
+#enable ly  greeter and pipewire
 sudo systemctl enable ly
+sudo systemctl enable pipewire
