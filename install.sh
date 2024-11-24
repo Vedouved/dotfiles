@@ -25,3 +25,6 @@ cp ~/dotfiles/.zshrc ~/
 sudo cp -r ~/dotfiles/fonts/fonts /usr/share/
 sudo cp -r ~/dotfiles/ly/ /etc/
 source ~/.zshrc
+
+#enable ly  greeter
+sudo systemctl enable ly
