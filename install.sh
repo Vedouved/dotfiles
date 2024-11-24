@@ -29,3 +29,5 @@ source ~/.zshrc
 #enable ly  greeter and pipewire
 sudo systemctl enable ly
 sudo systemctl enable pipewire
+sudo systemctl enable pipewire-pulse
+sudo systemctl enable wireplumber
