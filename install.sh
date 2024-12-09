@@ -1,11 +1,11 @@
 #! /bin/bash
 
 #install packages
-sudo pacman -Syu neovim hyprland swww waybar kitty fastfetch wofi nwg-look hyprlock hypridle lsd polkit zsh openssh
+sudo pacman -Syu neovim hyprland swww waybar kitty fastfetch wofi nwg-look hyprlock hypridle lsd polkit zsh openssh sudo
 sudo pacman -S --needed base-devel
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si
+#git clone https://aur.archlinux.org/paru.git
+#cd paru
+#makepkg -si
 
 paru -S waypaper pywal-git
 
@@ -25,5 +25,6 @@ cp ~/dotfiles/.zshrc ~/
 sudo cp -r ~/dotfiles/fonts/fonts /usr/share/
 sudo cp -r ~/dotfiles/ly/ /etc/
 
-#enable ly  greeter and pipewire
+#enable ly greeter and ssh
 sudo systemctl enable ly
+sudo systemctl enable sshd
