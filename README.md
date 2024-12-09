@@ -1,3 +1,5 @@
+Install paru
+
 chmod +X install.sh
 
 ./install.sh
