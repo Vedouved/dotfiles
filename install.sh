@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #install packages
-sudo pacman -Syu neovim hyprland swww waybar kitty fastfetch wofi nwg-look hyprlock hypridle lsd polkit zsh openssh sudo hyprcursor
+sudo pacman -Syu neovim hyprland swww waybar kitty fastfetch wofi nwg-look hyprlock hypridle lsd polkit zsh openssh sudo hyprcursor ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono
 #sudo pacman -S --needed base-devel
 #git clone https://aur.archlinux.org/paru.git
 #cd paru
