@@ -7,11 +7,13 @@ git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 
-sleep 10
+sleep 5
 
 paru -S waypaper pywal-git
 
 #installing rice
+mkdir ~/.icons/windows11concept-dark
+cp -r ~/dotfiles/windows11concept-dark ~/.icons/windows11concept-dark
 cp -r ~/dotfiles/.config ~/
 cp ~/dotfiles/.p10k.sh ~/
 cp ~/dotfiles/.viminfo ~/
