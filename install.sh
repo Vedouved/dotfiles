@@ -14,9 +14,12 @@ paru -S waypaper
 paru -S hyprshot
 paru -S pywal-git
 
-echo "Do you have an asus laptop?"
-paru -S asusctl
-paru -S supergfxctl
+echo "Do you have an asus laptop? (Y/N)"
+read ans
+if [ $ans == "Y" ] | [ $ans == "y" ]; then
+  paru -S asusctl
+  paru -S supergfxctl
+fi
 
 #installing rice
 mkdir ~/.icons
