@@ -24,6 +24,8 @@ fi
 #installing rice
 mkdir ~/.icons
 cp -r ~/dotfiles/windows11concept-dark ~/.icons/
+cp ~/dotfiles/.viminfo ~/
+cp -r ~/dotfiles/.config ~/
 sudo cp -r ~/dotfiles/fonts/fonts /usr/share/
 sudo cp -r ~/dotfiles/ly/ /etc/
 
