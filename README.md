@@ -1,9 +1,9 @@
-chmod +X install.sh
+chmod +x install.sh
 
 ./install.sh
 
 chsh -s $(which zsh)
 
-chmod +X ommyzsh-installer.sh
+chmod +x ommyzsh-installer.sh
 
 ./ommyzsh-installer.sh
