@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #install packages
-sudo pacman -Syu --needed base-devel neovim hyprland swww waybar kitty fastfetch wofi nwg-look hyprlock hypridle lsd polkit zsh openssh sudo hyprcursor ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono
+sudo pacman -Syu --needed base-devel neovim hyprland swww waybar kitty fastfetch wofi nwg-look hyprlock hypridle lsd polkit zsh openssh sudo hyprcursor ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono brightnessctl
 
 #install paru
 git clone https://aur.archlinux.org/paru.git
@@ -13,6 +13,10 @@ sleep 5
 paru -S waypaper
 paru -S hyprshot
 paru -S pywal-git
+
+echo "Do you have an asus laptop?"
+paru -S asusctl
+paru -S supergfxctl
 
 #installing rice
 mkdir ~/.icons
