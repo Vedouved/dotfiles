@@ -1,19 +1,22 @@
 #! /bin/bash
 
 #install packages
-sudo pacman -Syu neovim hyprland swww waybar kitty fastfetch wofi nwg-look hyprlock hypridle lsd polkit zsh openssh sudo hyprcursor ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono
-sudo pacman -S --needed base-devel
+sudo pacman -Syu --needed base-devel neovim hyprland swww waybar kitty fastfetch wofi nwg-look hyprlock hypridle lsd polkit zsh openssh sudo hyprcursor ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono
+
+#install paru
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 
 sleep 5
 
-paru -S waypaper pywal-git
+paru -S waypaper
+paru -S hyprshot
+paru -S pywal-git
 
 #installing rice
-mkdir ~/.icons/windows11concept-dark
-cp -r ~/dotfiles/windows11concept-dark ~/.icons/windows11concept-dark
+mkdir ~/.icons
+cp -r ~/dotfiles/windows11concept-dark ~/.icons/
 cp -r ~/dotfiles/.config ~/
 cp ~/dotfiles/.p10k.sh ~/
 cp ~/dotfiles/.viminfo ~/
