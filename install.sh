@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #install packages
-sudo pacman -Syu --needed base-devel neovim hyprland swww waybar kitty fastfetch wofi nwg-look hyprlock hypridle lsd polkit zsh openssh sudo hyprcursor ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono brightnessctl
+sudo pacman -Syu --needed base-devel neovim hyprland swww waybar kitty fastfetch wofi nwg-look hyprlock hypridle lsd polkit zsh openssh sudo hyprcursor ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-common ttf-nerd-fonts-symbols-mono brightnessctl pipewire pavucontrol wireplumber pipe-pulse bluez bluez-utils fzf bat duf 7zip alsa-lib pipewire-alsa pipewire-jack hypridle hyprlock
 
 #install paru
 git clone https://aur.archlinux.org/paru.git
