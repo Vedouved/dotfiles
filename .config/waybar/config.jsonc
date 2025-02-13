@@ -44,7 +44,10 @@
             "default" : "",
 	        "active" : "",
 	        "urgent" : ""
-         }
+         },
+       "persistent-workspaces": {
+            "eDP-1": 5
+        }
      },
     "keyboard-state": {
         "numlock": true,
