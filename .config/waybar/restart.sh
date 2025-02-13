@@ -1,2 +1,7 @@
 #! /sbin/bash
-pidof waybar || killall -SIGUSR2 waybar
+if [pidof waybar = 0 ]; then
+    waybar
+else
+    killall waybar
+    waybar
+fi
