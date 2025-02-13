@@ -46,7 +46,7 @@
 	        "urgent" : ""
          },
        "persistent-workspaces": {
-            "eDP-1": 5
+            "*": 5
         }
      },
     "keyboard-state": {
