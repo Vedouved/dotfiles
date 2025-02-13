@@ -1,27 +1,30 @@
 // -*- mode: jsonc -*-
 {
-     "margin-top": 5, 
+     "margin-top": 0,
+     "margin-bottom": 0,
+     "margin-left": 0,
+     "margin-right": 0,
      "layer": "top", // Waybar at top layer
      "position": "top", // Waybar position (top|bottom|left|right)
-     "height": 23, // Waybar height (to be removed for auto height)
-     "width": 1280, // Waybar width
      "spacing": 4, // Gaps between modules (4px)
+
     // Choose the order of the modules
     "modules-left": [
 	"hyprland/workspaces",
-	"hyprland/window"
+    "hyprland/window"
     ],
     "modules-center": [
-        "clock"
+        "clock",
+        "custom/media",
+        "mpd"
     ],
     "modules-right": [
-        "mpd",
         //"idle_inhibitor",
         "pulseaudio",
-        "network",
+        //"network",
         //"power-profiles-daemon",
-        "cpu",
-        "memory",
+        //"cpu",
+        //"memory",
         "temperature",
         "backlight",
         //"keyboard-state",
@@ -36,11 +39,11 @@
        "disable-scroll": true,
        "all-outputs": true,
        "warp-on-scroll": false,
-       "format": "{name} {icon}",
+       "format": "{}",
          "format-icons": {
-           "default" : "",
-	   "active" : "",
-	   "urgent" : ""
+            "default" : "",
+	        "active" : "",
+	        "urgent" : ""
          }
      },
     "keyboard-state": {
@@ -64,8 +67,8 @@
     },
     "mpd": {
         "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
-        "format-disconnected": "Disconnected ",
-        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+        "format-disconnected": "Disconnected",
+        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}   Stopped",
         "unknown-tag": "N/A",
         "interval": 5,
         "consume-icons": {
@@ -156,9 +159,9 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
+        "format-ethernet": "{ipaddr}/{cidr} 󰈀",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "format-linked": "{ifname} (No IP) 󰈁",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
@@ -172,8 +175,8 @@
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
-            "hands-free": "",
-            "headset": "",
+            "hands-free": "",
+            "headset": "󰋎",
             "phone": "",
             "portable": "",
             "car": "",

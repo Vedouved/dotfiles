@@ -1,2 +1,2 @@
 #! /sbin/bash
-killall -SIGUSR2 waybar
+pidof waybar || killall -SIGUSR2 waybar
